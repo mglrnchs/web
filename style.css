@@ -1,0 +1,115 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: white;
+    color: #333;
+    padding: 15px 0; /* Increased padding */
+    border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Changed to space-between */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Added padding to header content */
+}
+
+.top-nav {
+    display: flex; /* Use flexbox for top navigation */
+}
+
+.top-nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px; /* Increased margin for better spacing */
+    padding: 8px 12px; /* Added padding to navigation links */
+    border-radius: 5px; /* Added rounded corners */
+}
+
+.top-nav a:hover {
+    background-color: #f0f0f0; /* Added hover effect */
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 80px;
+    margin-right: 15px; /* Increased margin for better spacing */
+}
+
+.text-logo {
+    font-size: 1.8em; /* Slightly increased font size */
+    font-weight: bold;
+    letter-spacing: 1px; /* Added letter spacing */
+}
+
+.social-nav {
+    display: flex; /* Use flexbox for social navigation */
+}
+
+.social-nav a {
+    margin: 0 10px; /* Increased margin for better spacing */
+}
+
+.social-nav img {
+    height: 30px; /* Increased icon size */
+}
+
+.bottom-nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px; /* Increased margin for better spacing */
+    padding: 8px 12px; /* Added padding to navigation links */
+    border-radius: 5px; /* Added rounded corners */
+}
+
+.bottom-nav a:hover {
+    background-color: #f0f0f0; /* Added hover effect */
+}
+
+.content-container {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+}

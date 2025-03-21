@@ -1,0 +1,125 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically align items */
+}
+
+.top-nav {
+    /* Add styling for the top navigation if needed */
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 40px;
+    margin-right: 1rem;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center; /* Vertically align icons */
+}
+
+.icons img {
+    max-height: 25px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.menu-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.menu-section h2 {
+    margin-bottom: 1rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.menu-item-name {
+    flex-grow: 1;
+}
+
+.menu-item-prices {
+    display: flex;
+    gap: 1rem;
+}
+
+.add-ons-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.add-on-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+#cart {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    display: none;
+}
+
+#cart ul {
+    list-style-type: none;
+    padding: 0;
+}

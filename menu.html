@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altitud Coffee - Menu</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script2.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <nav class="top-nav">
+                    <a href="index.html">Home</a>
+                </nav>
+                <div class="logo">
+                    <img src="altitud_logo.png" alt="Altitud Coffee Logo">
+                    <h1>ALTITUD COFEE SPACE</h1>
+                </div>
+                <div class="icons">
+                    <img src="person_icon.png" alt="Person Icon" onclick="goToAccount()">
+                    <img src="cart_icon.png" alt="Cart Icon" onclick="showCart()">
+                </div>
+            </div>
+        </header>
+
+        <div class="menu-sections">
+            <div class="menu-section">
+                <h2>NON COFFEE</h2>
+                <div class="menu-item" onclick="addToCart('HORCHATA', 130, 140)">
+                    <div class="menu-item-name">HORCHATA <br> <small>Oat and Grain Milk blended with cinnamon and vanilla</small></div>
+                    <div class="menu-item-prices"><span>₱130</span><span>₱140</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('SIGNATURE HOT CHOCOLATE', 140)">
+                    <div class="menu-item-name">SIGNATURE HOT CHOCOLATE <br> <small>Comforting hot chocolate that warms the heart.</small></div>
+                    <div class="menu-item-prices"><span>₱140</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('MILKY CHOCOLATE',140)">
+                    <div class="menu-item-name">MILKY CHOCOLATE <br> <small>Classic Chocolate for the kids and kids at heart</small></div>
+                    <div class="menu-item-prices"><span>₱140</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('MILKY STRAWBERRY', 140)">
+                    <div class="menu-item-name">MILKY STRAWBERRY <br> <small>Creamy, chunky, beautiful and yummy strawberry drink.</small></div>
+                    <div class="menu-item-prices"><span>₱140</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('SPARKLY STRAWBERRY', 140)">
+                    <div class="menu-item-name">SPARKLY STRAWBERRY <br> <small>Our version of a Strawberry Refresher</small></div>
+                    <div class="menu-item-prices"><span>₱140</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('BERRY BLISS', 150)">
+                    <div class="menu-item-name">BERRY BLISS <br> <small>Creamy and refreshing drink made with blueberries and strawberries</small></div>
+                    <div class="menu-item-prices"><span>₱150</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('MANGO ICED TEA', 140)">
+                    <div class="menu-item-name">MANGO ICED TEA <br> <small>Mango twist to a classic favorite.</small></div>
+                    <div class="menu-item-prices"><span>₱140</span></div>
+                </div>
+                <h2>MATCHA SERIES</h2>
+                <p>Made with our signature matcha, with the right balance of sweetness and natural flavors of matcha.</p>
+                <div class="menu-item" onclick="addToCart('MATCHA LATTE', 170, 180)">
+                    <div class="menu-item-name">MATCHA LATTE</div>
+                    <div class="menu-item-prices"><span>₱170</span><span>₱180</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('KETO MATCHA', 175, 185)">
+                    <div class="menu-item-name">KETO MATCHA</div>
+                    <div class="menu-item-prices"><span>₱175</span><span>₱185</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('DIRTY MATCHA LATTE', 185, 195)">
+                    <div class="menu-item-name">DIRTY MATCHA LATTE <br> <small>Perfect mix of matcha and espresso & milk</small></div>
+                    <div class="menu-item-prices"><span>₱185</span><span>₱195</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('DIRTY KETO MATCHA', 190, 200)">
+                    <div class="menu-item-name">DIRTY KETO MATCHA <br> <small>Perfect mix of matcha and espresso over soy milk</small></div>
+                    <div class="menu-item-prices"><span>₱190</span><span>₱200</span></div>
+                </div>
+            </div>
+            <div class="menu-section">
+                <h2>ALTITUD SPECIALS</h2>
+                <p>Carefully and creatively crafted by our baristas.</p>
+                <div class="menu-item" onclick="addToCart('SUMMER HAZE', 170)">
+                    <div class="menu-item-name">SUMMER HAZE <br> <small>A drink that will remind you of bright summer days: espresso, orange, and strawberry.</small></div>
+                    <div class="menu-item-prices"><span>₱170</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('APPLE CINNAMON SHAKERATO', 140)">
+                    <div class="menu-item-name">APPLE CINNAMON SHAKERATO <br> <small>Best described as: if an apple pie was a drink.</small></div>
+                    <div class="menu-item-prices"><span>₱140</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('AVO-GATO', 135)">
+                    <div class="menu-item-name">AVO-GATO <br> <small>Our version of affogato - espresso over avocado ice cream</small></div>
+                    <div class="menu-item-prices"><span>₱135</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('SHAKERATO', 110)">
+                    <div class="menu-item-name">SHAKERATO <br> <small>Shaken, not stirred. Iced shaken espresso with a pinoy flair.</small></div>
+                    <div class="menu-item-prices"><span>₱110</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('PASSION FRUIT AMERICANO', 140)">
+                    <div class="menu-item-name">PASSION FRUIT AMERICANO <br> <small>Bright and bold with just the right sweetness</small></div>
+                    <div class="menu-item-prices"><span>₱140</span></div>
+                </div>
+                <div class="menu-item" onclick="addToCart('ELIXIR',140)">
+                    <div class="menu-item-name">ELIXIR <br> <small>With anti-oxidants of ginger turmeric with natural sweetness of passion fruit, keeping you energized all day long.</small></div>
+                    <div class="menu-item-prices"><span>₱140</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="add-ons-container">
+            <h2>add-ons/upgrades:</h2>
+            <div class="add-on-item">
+                <div class="add-on-name">Make it stronger (Add Espresso Shot)</div>
+                <div class="add-on-price">₱50</div>
+            </div>
+        </div>
+
+        <footer>
+        </footer>
+
+        <div id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="cart-total">0</span></p>
